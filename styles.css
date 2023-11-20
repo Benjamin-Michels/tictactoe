@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222832;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-family: monospace;
+    margin-bottom: 3rem;
+
+}
+
+.playerbox{
+    display: flex;
+    font-size: 3rem;
+    font-family: monospace;
+}
+
+.playerbox div{
+    border: 3px solid black;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.restartPopUp{
+    position: absolute;
+    font-family: monospace;
+    z-index: 99;
+    background-color: #ffffff00;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.popupcontainer{
+    background-color: #222832;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid black;
+    border-radius: 2rem;
+
+}
+
+.restartButton{
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.restartButton:hover{
+    background-color: #fd2c5c;
+    cursor: pointer;
+}
+
+.gameboard{
+    width: 30rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+}
+
+
+.box{
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid black;
+    font-size: 9rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+.box:hover{
+    background-color: #fd2c5c;
+}
